@@ -13,13 +13,13 @@ dotenv.config()
 
 const PORT = process.env.PORT
 
-app.use(express.json({ limit: '50mb' }));
+app.use(express.json({ limit: '20mb' }));
 app.use(express.urlencoded({ limit: '20mb', extended: true }));
 
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://slab-beta.onrender.com",
     credentials: true
 }))
 
