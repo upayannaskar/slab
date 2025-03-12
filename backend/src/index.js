@@ -19,7 +19,7 @@ app.use(express.urlencoded({ limit: '20mb', extended: true }));
 app.use(express.json())
 app.use(cookieParser())
 app.use(cors({
-    origin: "https://slab-api.vercel.app",
+    origin: "https://slab-beta.vercel.app",
     credentials: true
 }))
 
