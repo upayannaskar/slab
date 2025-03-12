@@ -23,6 +23,10 @@ app.use(cors({
     credentials: true
 }))
 
+
+app.get("/", (req, res) => {
+    res.send("Slab Beta API Endpoint")
+})
 app.use("/api/auth", authRoutes)
 app.use("/api/messages", messageRoutes)
 
